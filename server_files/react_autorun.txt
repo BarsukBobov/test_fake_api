@@ -4,7 +4,7 @@ After=multi-user.target
 [Service]
 Type=idle
 WorkingDirectory=/home/test_fake_api
-ExecStart=npm start
+ExecStart=serve -s build
 StandardInput=tty-force
 Restart = always
 RestartSec = 15
